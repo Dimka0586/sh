@@ -1,0 +1,4 @@
+com\example\sh\model\AnalogIn.class
+com\example\sh\controller\AnalogInController.class
+com\example\sh\ShApplication.class
+com\example\sh\repository\AnalogInRepository.class
