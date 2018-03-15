@@ -12,17 +12,21 @@ import java.util.List;
 @RestController(value = "analogIns")
 public class AnalogInController {
 
-    @Autowired
-    private AnalogInRepository analogInRepository;
+
+
+    //@Autowired
+    //private AnalogInRepository analogInRepository;
 
     @PostMapping
     public AnalogIn createAnalogIn(AnalogIn analogIn) {
-        return analogInRepository.saveAndFlush(analogIn);
+        return null;
+        //return analogInRepository.saveAndFlush(analogIn);
     }
 
     @GetMapping
     public List<AnalogIn> getAnalogIns() {
-        return analogInRepository.findAll();
+        return null;
+        //return analogInRepository.findAll();
     }
 
 

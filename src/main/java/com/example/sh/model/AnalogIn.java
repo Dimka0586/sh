@@ -1,14 +1,14 @@
 package com.example.sh.model;
 
-import javax.persistence.*;
+//import javax.persistence.*;
 
-@Entity
+//@Entity
 public class AnalogIn {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@Id
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
 
-    @Column(name = "value")
+    //@Column(name = "value")
     Integer value;
 
     public AnalogIn() {
