@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RestController(value = "analogIns")
+// @RestController(value = "analogIns")
 public class AnalogInController {
 
 
