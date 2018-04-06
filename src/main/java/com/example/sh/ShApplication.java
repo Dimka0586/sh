@@ -30,10 +30,10 @@ public class ShApplication  extends SpringBootServletInitializer {
 		SpringApplication.run(ShApplication.class, args);
 	}
 
-	@Autowired
-	AnalogSensorDayRepository analogSensorDayRepository;
-	@Autowired
-	AnalogSensorRepository analogSensorRepository;
+	//@Autowired
+	//AnalogSensorDayRepository analogSensorDayRepository;
+	//@Autowired
+	//AnalogSensorRepository analogSensorRepository;
 	@Autowired
 	DeviceValueDayRepository deviceValueDayRepository;
 	@Autowired
