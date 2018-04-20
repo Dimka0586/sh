@@ -30,10 +30,10 @@ public class ShApplication  extends SpringBootServletInitializer {
 		SpringApplication.run(ShApplication.class, args);
 	}
 
-	//@Autowired
-	//AnalogSensorDayRepository analogSensorDayRepository;
-	//@Autowired
-	//AnalogSensorRepository analogSensorRepository;
+	@Autowired
+	AnalogSensorDayRepository analogSensorDayRepository;
+	@Autowired
+	AnalogSensorRepository analogSensorRepository;
 	@Autowired
 	DeviceValueDayRepository deviceValueDayRepository;
 	@Autowired
@@ -70,10 +70,18 @@ public class ShApplication  extends SpringBootServletInitializer {
 				addDevice("_tempAirTep1", "tempAirTep1", "sensors.teplica1.tempAir"));
 		subscriptions.put("_humAirTep1",
 				addDevice("_humAirTep1", "humAirTep1", "sensors.teplica1.humAir"));
-		subscriptions.put("_tempTubeIn1Tep1",
-				addDevice("_tempTubeIn1Tep1", "tempTubeIn1Tep1", "sensors.teplica1.tempTubeIn1"));
-		subscriptions.put("_tempTubeOut1Tep1",
-				addDevice("_tempTubeOut1Tep1", "tempTubeOut1Tep1", "sensors.teplica1.tempTubeOut1"));
+
+		subscriptions.put("_tempGrount1Tep1",
+				addDevice("_tempGrount1Tep1", "tempGrount1Tep1", "sensors.teplica1.tempGrount1"));
+		subscriptions.put("_tempGrount2Tep1",
+				addDevice("_tempGrount2Tep1", "tempGrount2Tep1", "sensors.teplica1.tempGrount2"));
+
+		subscriptions.put("_tempTubIn1Tep1",
+				addDevice("_tempTubIn1Tep1", "tempTubIn1Tep1", "sensors.teplica1.tempTubIn1"));
+		subscriptions.put("_tempTubOut1Tep1",
+				addDevice("_tempTubOut1Tep1", "tempTubOut1Tep1", "sensors.teplica1.tempTubOut1"));
+		subscriptions.put("_tempTubOut2Tep1",
+				addDevice("_tempTubOut2Tep1", "tempTubOut2Tep1", "sensors.teplica1.tempTubOut2"));
 
 		List<String> queueList = Arrays.asList(simpleMessageListenerContainer.getQueueNames());
 		if (queueList.isEmpty()) {
